@@ -1,17 +1,21 @@
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Alert } from "react-native";
 import { GlobalStyles } from "../constants/styles";
 import LoginCard from "../components/LoginScreen/LoginCard";
 
 function LoginScreen({ navigation }) {
 
     function logInPressHandler() {
-        return navigation.navigate('WelcomeScreen')
+        if (true) {
+            return navigation.navigate('WelcomeScreen')
+        } else {
+            return Alert.alert('Check your email or password');
+        }
     }
 
     return (
         <View style={styles.container} >
             <LoginCard
-                loginFunc={logInPressHandler}
+                logInFunc={logInPressHandler}
                 createUserFunc={() => console.log('asd')}
             />
         </View>

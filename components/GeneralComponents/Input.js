@@ -2,7 +2,7 @@ import { StyleSheet, TextInput } from "react-native";
 
 function Input() {
     return (
-        <TextInput style={styles.inputContainer} />
+        <TextInput style={styles.inputContainer} autoCapitalize='none' />
     );
 }
 

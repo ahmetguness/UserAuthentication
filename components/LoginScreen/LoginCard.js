@@ -3,7 +3,7 @@ import Input from "../GeneralComponents/Input";
 import { GlobalStyles } from "../../constants/styles";
 import PrimaryButton from "../GeneralComponents/PrimaryButton";
 
-function LoginCard({ loginFunc, createUserFunc }) {
+function LoginCard({ logInFunc, createUserFunc }) {
 
     return (
         <View style={styles.mainContainer} >
@@ -12,7 +12,7 @@ function LoginCard({ loginFunc, createUserFunc }) {
                 <Input />
                 <Text style={styles.text} >Password:</Text>
                 <Input />
-                <PrimaryButton buttonName="Log In" onPressFunc={loginFunc} />
+                <PrimaryButton buttonName="Log In" onPressFunc={logInFunc} />
                 <PrimaryButton buttonName="Create a new user" onPressFunc={createUserFunc} />
             </View>
         </View>
